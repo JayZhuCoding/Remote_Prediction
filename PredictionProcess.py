@@ -60,7 +60,7 @@ class PredictionProcess():
         test = self._data_transform(features)
         print test
         # Prediction using DT
-        clf = joblib.load('DecisionTreeModel.pkl')
+        clf = joblib.load('./model/DecisionTreeModel.pkl')
         #startTime = time()
         result = int(clf.predict(test)[0])
         #print "Time Spent:", (time() - startTime), "us"
